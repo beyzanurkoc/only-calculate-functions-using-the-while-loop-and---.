@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){ 
+    int x, cnt = 0 ;
+    int sum= 0, top= 0, res;
+    int y;
+    int a = 0;
+    int cn = 0;
+    printf("Enter the value of x: ");
+    scanf("%d",&x);
+    while (cnt < 67 ){
+        sum = sum + x;
+        cnt++;
+    }
+    while (cn < 13){
+        top = top + (x+13);
+        cn++;
+    }
+    
+    y = sum + top;
+    
+    while(y > 5){
+        y = y - 5;
+        a++;
+        
+    }
+    
+    printf("f(x) = %d", a);
+}
